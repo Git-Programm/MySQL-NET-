@@ -1,0 +1,14 @@
+Convert Windows-style line endings to Unix-style 
+
+sh sed -i 's/\r$//' select1.sh
+
+sed 's/.$//'               # assumes that all lines end with CR/LF
+
+The -i option comes in handy to edit the original file itself. If you use the -i option the sed command replaces the text in the original file itself rather than displaying it on the terminal. Be careful in using the -i option. Once you changed the contents of the file, you cannot revert back to the original file.
+
+CRLF
+CR and LF are control characters or bytecode that can be used to mark a line break in a text file.
+
+CR = Carriage Return (\r, 0x0D in hexadecimal, 13 in decimal) — moves the cursor to the beginning of the line without advancing to the next line.
+LF = Line Feed (\n, 0x0A in hexadecimal, 10 in decimal) — moves the cursor down to the next line without returning to the beginning of the line.
+A CR immediately followed by a LF (CRLF, \r\n, or 0x0D0A) moves the cursor down to the next line and then to the beginning of the line.
