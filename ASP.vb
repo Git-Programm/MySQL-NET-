@@ -144,6 +144,8 @@ Partial Class _Default
         male.Checked = False
         female.Checked = False
         other.Checked = False
+        DropDownList1.SelectedValue = "ASP"
+        lblMsg.Text = ""
     End Sub
 
 End Class
