@@ -13,4 +13,3 @@ echo " not a directory "
 fi 
 done 
 echo `ls -Rl $1 | grep "^-" | tr -s ' ' | cut -d ' ' -f 5,9 | sort -n | tail -1`
-
