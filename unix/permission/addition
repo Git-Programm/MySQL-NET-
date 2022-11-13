@@ -1,7 +1,0 @@
-clear
-echo -n "enter first no:"
-read no1
-echo -n "enter second no:"
-read no2
-sum=$((no1+no2))
-echo "sum of $no1 and $no2 is: $sum"
