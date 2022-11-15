@@ -1,0 +1,7 @@
+electrical 34
+ mechanical 67
+ electrical 80
+ computer science  43
+ mechanical 65
+ civil 98
+ computer science 64
